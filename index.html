@@ -4,17 +4,28 @@
   <script src="js/todo.js"></script>
 </head>
 <body>
-  <h1> TO DO LIST</h1>
+  <div class="wrapper">
+    <div class="form-wrapper">
+      <h1 class="title">To Do List</h1>
+      <p class="error"></p>
+      <form class="task-form" action="index.html" method="post">
+        <label for="task">New Task</label>
+        <input type="text" name="task" class="input-field" placeholder="Add Tasks Here!">
+        <label for="category">Category</label>
+        <select class="category" name="category">
+          <option value="" selected="selected" disabled>Select a Category</option>
+          <option value="grocery">Grocery</option>
+          <option value="home-improvement">Home Improvement</option>
+        </select>
+        <button type="submit" class="submit-button" name="button">Add Task</button>
+      </form>
+    </div>
+    <div class="list-wrapper">
+      <ul class="list-items">
 
-  <h3> Your List</h3>
-  <div id="list">
-    <ol>
-    </ol>
+      </ul>
+    </div>
+
   </div>
-  <h3> Add Items To Your List</h3>
-  <form>
-    <label form="item" name="item"><input type="text" id="item">
-    <input type="submit" value="submit">
-  </form>
 
 </body>
